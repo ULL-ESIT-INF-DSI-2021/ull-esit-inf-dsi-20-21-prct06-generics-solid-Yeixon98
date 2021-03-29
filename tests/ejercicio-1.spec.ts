@@ -15,5 +15,7 @@ describe('El combate definitivo', () => {
     it("Objeto Codigo Lyoko" , () => {
         expect(new CL("Tokonome",2,3,5,"Codigo Lyoko") instanceof CL).to.eql(true);
     });
-    
+    it("Objeto Marvel" , () => {
+        expect(new Marvel("Dr.Strange",2,1,6,"Marvel") instanceof Marvel).to.eql(true);
+    });
 });
