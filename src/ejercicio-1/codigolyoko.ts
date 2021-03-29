@@ -10,7 +10,7 @@ export class CL extends Figther{
     }
 
     print(){
-        console.log("El ganador es" + this.get_name() + " que pertenece a Codigo Lyoko");
+        console.log("El ganador es " + this.get_name() + " que pertenece a Codigo Lyoko");
     }
 
     efi<T extends (Figther)>(L1: T, daño: number):number{

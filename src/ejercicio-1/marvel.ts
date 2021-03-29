@@ -11,7 +11,7 @@ export class Marvel extends Figther{
     }
 
     print(){
-        console.log("El ganador es" + this.get_name() + " que pertenece a Marvel");
+        console.log("El ganador es " + this.get_name() + " que pertenece a Marvel");
     }
 
     efi<T extends (Figther)>(L1: T, daño: number):number{
