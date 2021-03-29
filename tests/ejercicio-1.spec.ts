@@ -18,4 +18,7 @@ describe('El combate definitivo', () => {
     it("Objeto Marvel" , () => {
         expect(new Marvel("Dr.Strange",2,1,6,"Marvel") instanceof Marvel).to.eql(true);
     });
+    it("Objeto Pokedex" , () => {
+        expect(new Pokedex([new Pokemon("Torchi",2,4,7,"fuego"),new Marvel("Dr.Strange",2,1,6,"Marvel")]) instanceof Pokedex).to.eql(true);
+    });
 });
