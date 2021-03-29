@@ -24,4 +24,14 @@ describe('El combate definitivo', () => {
     it("Objeto Combat" , () => {
         expect(new Combat(new Pokemon("Torchi",2,4,7,"fuego"),new Marvel("Dr.Strange",2,1,6,"Marvel")) instanceof Combat).to.eql(true);
     });
+
+    let pkm = new Pokemon("Torchi",20,15,50,"fuego");
+    let cl = new CL("Tokonome",10,25,20,"Codigo Lyoko");
+    let ml = new Marvel("Dr.Strange",5,10,100,"Marvel")
+    let pkx = new Pokedex([pkm,cl,ml]);
+    let cbt1 = new Combat(pkx.get_luchadores()[2],pkx.get_luchadores()[1]);
+    
+    it("Combate" , () => {
+        expect(cbt1.start()).to.eql("Dr.Strange");
+    });
 });

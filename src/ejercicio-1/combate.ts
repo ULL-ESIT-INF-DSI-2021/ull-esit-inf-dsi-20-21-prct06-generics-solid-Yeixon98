@@ -9,9 +9,9 @@ export class Combat {
     constructor(public L1: Figther ,public L2: Figther) {
     }
 
-    start() {
-        let daño1:number = 50 * (this.L1.get_atk()/this.L2.get_def());
-        let daño2:number = 50 * (this.L2.get_atk()/this.L1.get_def());
+    start(): string{
+        let daño1:number = 30 * (this.L1.get_atk()/this.L2.get_def());
+        let daño2:number = 30 * (this.L2.get_atk()/this.L1.get_def());
         daño1 = this.L1.efi(this.L2,daño1); 
         daño2 = this.L2.efi(this.L1,daño2); 
         
@@ -28,6 +28,7 @@ export class Combat {
             else{
                 console.log(this.L2.get_name() + " se devilito.")
                 this.L1.print();
+                return this.L1.get_name();
             }
 
             if(vida2 > 0){
@@ -38,19 +39,9 @@ export class Combat {
                 else{
                     console.log(this.L1.get_name() + " se devilito.")
                     this.L2.print();
+                    return this.L2.get_name();
                 }
             }
         }
     }
 }
-
-
-// let pkm = new Pokemon("Torchi",20,15,50,"fuego");
-// let cl = new CL("Mera",10,25,20,"Codigo Lyoko");
-// let ml = new Marvel("Nigga",5,10,100,"Marvel")
-
-// let cbt1 = new Combat(ml,cl);
-// let cbt2 = new Combat(pkm,cl);
-
-// cbt1.start();
-// cbt2.start();
