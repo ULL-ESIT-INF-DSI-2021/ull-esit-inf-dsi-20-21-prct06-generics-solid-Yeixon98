@@ -1,9 +1,3 @@
-import { Pokemon } from "./pokemon";
-import { DC } from "./dc";
-import { Marvel } from "./marvel";
-
-
-
 
 
 
@@ -34,5 +28,6 @@ export abstract class Figther{
     
     abstract print(): void;
 
-    abstract efi<T extends (Pokemon | DC | Marvel)>()
+                            // Pokemon | CL | Marvel
+    abstract efi<T extends (Figther)>(L1: T, daño: number):number;
 }

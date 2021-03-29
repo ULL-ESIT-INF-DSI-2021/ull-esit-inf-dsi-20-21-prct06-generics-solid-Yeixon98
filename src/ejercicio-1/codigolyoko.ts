@@ -1,25 +1,24 @@
 import { Figther } from "./fighter";
 import { Pokemon } from "./pokemon";
-import { CL } from "./codigolyoko";
+import { Marvel } from "./marvel";
 
 
 
-
-export class Marvel extends Figther{
+export class CL extends Figther{
     constructor(name: string, atk: number, def: number, hp: number, tipo: string){
         super(name,atk,def,hp,tipo);
     }
 
     print(){
-        console.log("El ganador es" + this.get_name() + " que pertenece a Marvel");
+        console.log("El ganador es" + this.get_name() + " que pertenece a Codigo Lyoko");
     }
 
     efi<T extends (Figther)>(L1: T, daño: number):number{
         if(L1 instanceof Pokemon)
-            return daño * 2;
-        if(L1 instanceof CL)
             return daño * 1.2;
-    
+        if(L1 instanceof Marvel)
+            return daño * 0.7;
+        
         return daño;
     }
 }
