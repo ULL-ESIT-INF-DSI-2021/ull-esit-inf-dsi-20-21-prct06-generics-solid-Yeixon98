@@ -12,5 +12,8 @@ describe('El combate definitivo', () => {
     it("Objeto pokemon" , () => {
         expect(new Pokemon("Torchi",2,4,7,"fuego") instanceof Pokemon).to.eql(true);
     });
-
+    it("Objeto Codigo Lyoko" , () => {
+        expect(new CL("Tokonome",2,3,5,"Codigo Lyoko") instanceof CL).to.eql(true);
+    });
+    
 });
