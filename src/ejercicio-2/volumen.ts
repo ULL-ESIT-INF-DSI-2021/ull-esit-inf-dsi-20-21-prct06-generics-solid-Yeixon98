@@ -1,6 +1,6 @@
 import {isConvertible} from './conversor';
 
-export class Tiempo implements isConvertible<[string, number, string]> {
+export class Volumen implements isConvertible<[string, number, string]> {
 
     constructor(){}
 
