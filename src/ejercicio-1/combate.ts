@@ -50,5 +50,7 @@ export class Combat {
 // let ml = new Marvel("Nigga",5,10,100,"Marvel")
 
 // let cbt1 = new Combat(ml,cl);
+// let cbt2 = new Combat(pkm,cl);
 
 // cbt1.start();
+// cbt2.start();

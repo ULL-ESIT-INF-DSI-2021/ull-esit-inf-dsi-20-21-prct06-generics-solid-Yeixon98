@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Combat = void 0;
-const codigolyoko_1 = require("./codigolyoko");
-const marvel_1 = require("./marvel");
-const pokemon_1 = require("./pokemon");
 class Combat {
     constructor(L1, L2) {
         this.L1 = L1;
@@ -39,8 +36,10 @@ class Combat {
     }
 }
 exports.Combat = Combat;
-let pkm = new pokemon_1.Pokemon("Torchi", 20, 15, 50, "fuego");
-let cl = new codigolyoko_1.CL("Mera", 10, 25, 20, "Codigo Lyoko");
-let ml = new marvel_1.Marvel("Nigga", 5, 10, 100, "Marvel");
-let cbt1 = new Combat(ml, cl);
-cbt1.start();
+// let pkm = new Pokemon("Torchi",20,15,50,"fuego");
+// let cl = new CL("Mera",10,25,20,"Codigo Lyoko");
+// let ml = new Marvel("Nigga",5,10,100,"Marvel")
+// let cbt1 = new Combat(ml,cl);
+// let cbt2 = new Combat(pkm,cl);
+// cbt1.start();
+// cbt2.start();

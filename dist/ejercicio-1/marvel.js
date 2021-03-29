@@ -9,7 +9,7 @@ class Marvel extends fighter_1.Figther {
         super(name, atk, def, hp, tipo);
     }
     print() {
-        console.log("El ganador es" + this.get_name() + " que pertenece a Marvel");
+        console.log("El ganador es " + this.get_name() + " que pertenece a Marvel");
     }
     efi(L1, daño) {
         if (L1 instanceof pokemon_1.Pokemon)

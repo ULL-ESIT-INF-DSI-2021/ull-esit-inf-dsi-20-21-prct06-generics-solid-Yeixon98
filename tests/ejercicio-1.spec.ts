@@ -1,9 +1,16 @@
 import 'mocha';
 import {expect} from 'chai';
-import {Class} from '../src/Ubi';
+import {Figther} from '../src/ejercicio-1/fighter';
+import {Pokemon} from '../src/ejercicio-1/pokemon';
+import {CL} from '../src/ejercicio-1/codigolyoko';
+import {Marvel} from '../src/ejercicio-1/marvel';
+import {Combat} from '../src/ejercicio-1/combate';
+import {Pokedex} from '../src/ejercicio-1/pokedex';
 
-describe('Nombre del ejercicio', () => {
-    it("Texto" , () => {
-        expect().to.eql([]);
+
+describe('El combate definitivo', () => {
+    it("Objeto pokemon" , () => {
+        expect(new Pokemon("Torchi",2,4,7,"fuego") instanceof Pokemon).to.eql(true);
     });
+
 });
