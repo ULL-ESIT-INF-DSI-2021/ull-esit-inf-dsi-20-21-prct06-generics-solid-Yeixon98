@@ -4,5 +4,5 @@
  * @function convert Realiza la conversión de unidades
  */
 export interface isConvertible<T> {
-    convert(first: T): number;
+    convert(dato: T): number;
 }

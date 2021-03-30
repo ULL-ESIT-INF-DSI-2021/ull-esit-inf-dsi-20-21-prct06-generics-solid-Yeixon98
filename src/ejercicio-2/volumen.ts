@@ -1,9 +1,17 @@
 import {isConvertible} from './conversor';
 
+/**
+ * Clase que representa unidades de medida de volumen
+ */
 export class Volumen implements isConvertible<[string, number, string]> {
 
     constructor(){}
 
+    /**
+     * Realiza la conversión de unidades
+     * @param dato unidad, valor de lo que vamos a camvertir y el 3er attr es a cual convertir
+     * @returns El valor convertido
+     */
     convert(dato: [string, number, string]): number {
         let result: number = dato[1];
         if(dato[0] == 'l') {
