@@ -4,11 +4,24 @@ import { Marvel } from "./marvel";
 import { Pokemon } from "./pokemon";
 
 
-
+/**
+ * Clase Combate, gestiona el duelo
+ */
 export class Combat {
+    /**
+     * Constructor
+     * @param L1 Luchador 1
+     * @param L2 Luchador 2
+     */
     constructor(public L1: Figther ,public L2: Figther) {
     }
 
+    /**
+     * Este metodo realiza las operaciones para calcular el daño que realiza cada lucahdor
+     * Luego llama al metodo efi para modificar el daño con respecto a la eficiencia
+     * Muestra en consola en cada momento como se encuentra la ida de cada Luchador
+     * @returns Devuelve el nombre del ganador
+     */
     start(): string{
         let daño1:number = 30 * (this.L1.get_atk()/this.L2.get_def());
         let daño2:number = 30 * (this.L2.get_atk()/this.L1.get_def());
