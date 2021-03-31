@@ -61,7 +61,17 @@ En este test comrobamos que se puede convertir valores de unidades de medidas si
 
 ### Ejercicio 3 - DSIflix
 
+En este último ejercicio se ha creado como solicita el enunciado una interfaz genérica `Streamable` que contiene algunos métodos con los
+que debe contar una colección de emisiones, como por ejemplo agregar un elemento a la colección, obtener el número de elementos de la 
+colección o los propios elementos.
+A continuación se ha creado otra interfaz que contiene un método de búsqueda, que extiende a la anterior. Este método permite especificar 
+el parámetro por el que se desea buscar y el valor del mismo. Por ejemplo: searchBy(‘titulo’, ‘Darling’).
+Lo siguiente que se ha hecho es crear una clase abstracta que permite definir una colección de objetos Streamable, donde se definen algunos de los métodos incluidos en las interfaces.
+Por último se han creado tres clases, que representan colecciones de series, películas y documentales. En ellas se definen los métodos que seguían siendo abstractos en la clase anterior. Todas ellas se definen de manera similar.
+
 [Codigo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/tree/master/src/ejercicio-3)
+
+En el test se han creado objetos de cada clase, series, películas y documentales, para asi añadir esos a una coleccion, poder realizar las pruebas, que estas valoran la busquedad por cada uno de los atributos, pasandole lo que desa buscar, ejemplo Object.searchBy("año",2018). devolviendo asi un vector de las series/películas/documentales dependiendo del objeto invocante, que coincidan.
 
 [Test](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/blob/master/tests/ejercicio-3.spec.ts)
 
