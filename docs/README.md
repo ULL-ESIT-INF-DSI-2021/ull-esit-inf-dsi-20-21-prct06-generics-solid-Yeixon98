@@ -48,7 +48,14 @@ donde el * se sustituye por los diferentes ficheros creando multiples lineas y C
 
 ### Ejercicio 2 - Conversor de unidades
 
+Para este ejercico nos pedian que implementramos una interfaz generiaca y varias clases, para poder convertir de una unidad a otra.
+Para ello se creo una interfaz generica con un metodo 'convert', y diversas clases que dependian de esta interfaz y cada una de ellas,
+tenia definido su propio metodo 'convert' dependiendo de la clase ,ejemplo masa, este metodo recivia un vector con un string el cual sera la unidad base, un numero que representaba la cantidad de dicha unidad y otro string que es a la unidad a la que se desea convertir; y a traves de unios if, comprobamos cual es el la unidad inicial y cual la final y con unas simples multiplicaciones o divisiones se convertian en la unidad destino.
+
 [Codigo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/tree/master/src/ejercicio-2)
+
+Para realizar el test hay que seguir los primeros pasos del ejercicio 1 pero cambiando la ruta a ejercicio-2.
+En este test comrobamos que se puede convertir valores de unidades de medidas similaes a otra de la misma ejemple de litro(l) a galones estadounidences(gal) y asi con las demas unidades de medidas. 
 
 [Test](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/blob/master/tests/ejercicio-2.spec.ts)
 
@@ -87,5 +94,7 @@ npm run coverage
 ```
 
 Podremos ver qué porcentaje del código está cubierto por pruebas y qué líneas de cada fichero no lo están.
+
 ![Estadisticas de Cubrimiento](./assets/coveralls.PNG)
+
 Estas estadisticas se encuentran bajas puesto que en el codigo hay muchos caminos que no se toman, con caminos me refiero por ejemplo a un 'if'.
