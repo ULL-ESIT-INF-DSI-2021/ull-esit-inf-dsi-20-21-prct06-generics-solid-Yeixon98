@@ -33,7 +33,30 @@ Antes de la realización de la práctica ha sido necesario consultar la document
 ***
 ## 4- Ejercicios <a name="Ejer"></a>
 
+### Ejercicio 1 - El combate definitivo
 
+En este ejercicio nos pedian desarrollar diferentes clases para poder lograr un combate entre distintos personajes de diferentes univesos, para ello creamos una clase abstracta
+que representaria a todos los combatientes(Fighter), y despeus otras subclases(Pokemon, Marvel, CodigoLyoko) para especificar ams cada metodo como el de eficiencia, que devuelve que tan duro pega cada personaje respecto a su oponente, y el metodo de imprimir el ganador, mostrando de que universo y como se llama.
+Por ultimo desarrollamos una clase Pokedex que implementaria un vector de combatientes, en el cual se almacenaran todos los combatientes existentes/usados para el combate.
+
+[Codigo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/tree/master/src/ejercicio-1)
+
+Para la realizaciond e los test, primero tenemos que exportar las clases que queremos usar, para esto incluimos en el fichero ```import {CLASS} from '../src/ejercicio-1/*';```
+donde el * se sustituye por los diferentes ficheros creando multiples lineas y CLASS por als clases correspondiente al fichero. En el test se comprobo la creacion correcta de cada Objecto de als diferentes clases y se llevo a cabo un combate.
+
+[Test](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/blob/master/tests/ejercicio-1.spec.ts)
+
+### Ejercicio 2 - Conversor de unidades
+
+[Codigo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/tree/master/src/ejercicio-2)
+
+[Test](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/blob/master/tests/ejercicio-2.spec.ts)
+
+### Ejercicio 3 - DSIflix
+
+[Codigo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/tree/master/src/ejercicio-3)
+
+[Test](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct06-generics-solid-Yeixon98/blob/master/tests/ejercicio-3.spec.ts)
 
 ***
 ## 5- Documentacion <a name="Docs"></a>
@@ -65,3 +88,4 @@ npm run coverage
 
 Podremos ver qué porcentaje del código está cubierto por pruebas y qué líneas de cada fichero no lo están.
 ![Estadisticas de Cubrimiento](./assets/coveralls.PNG)
+Estas estadisticas se encuentran bajas puesto que en el codigo hay muchos caminos que no se toman, con caminos me refiero por ejemplo a un 'if'.
